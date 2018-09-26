@@ -6,6 +6,7 @@ let rename = require("gulp-rename");
 let htmlmin = require("gulp-htmlmin");
 let htmlclean = require("gulp-htmlclean");
 let del = require('del');
+let yml = require('gulp-yaml');
 
 var configs = {
     autoprefixer: {
@@ -55,6 +56,14 @@ function minifyHTML() {
         .pipe(gulp.dest('dist'))
 }
 
+function yml2json() {
+    return gulp.src('./src/*.yml')
+    .pipe(yml({ schema: 'DEFAULT_SAFE_SCHEMA' }))
+    .pipe(gulp.dest('./dist/'))
+}
+
+
+
 function copyDist() {
     return gulp.src('dist/**/*')
         .pipe(gulp.dest('public'))
@@ -75,6 +84,7 @@ exports.clean = clean;
 exports.minifyJS = minifyJS;
 exports.minifyCSS = minifyCSS;
 exports.minifyHTML = minifyHTML;
+exports.yml2json = yml2json;
 exports.copyDist = copyDist;
 exports.copyAssets = copyAssets;
 
@@ -83,7 +93,8 @@ gulp.task('build', gulp.series(
     gulp.parallel(
         minifyJS,
         minifyCSS,
-        minifyHTML
+        minifyHTML,
+        yml2json
     ),
     gulp.series(
         copyAssets,
