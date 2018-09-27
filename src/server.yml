@@ -242,6 +242,23 @@ Linode:
     link: https://cos.ap-bangkok.myqcloud.com
   "俄罗斯莫斯科":
     link: https://cos.eu-moscow.myqcloud.com
+UCloud:
+  "北京":
+    link: http://www.cn-bj.ufileos.com
+  "上海二":
+    link: http://www.cn-sh2.ufileos.com
+  "香港":
+    link: http://www.hk.ufileos.com
+  "广东":
+    link: http://www.cn-gd.ufileos.com
+  "美国 (洛杉矶)":
+    link: http://www.us-ca.ufileos.com
+  "雅加达 (印度尼西亚)":
+    link: http://www.idn-jakarta.ufileos.com
+  "新加坡":
+    link: http://www.sg.ufileos.com
+  "尼日利亚":
+    link: http://www.afr-nigeria.ufileos.com
 "百度云":
   "华北 - 北京":
     link: http://www.bj.bcebos.com
@@ -348,23 +365,6 @@ AWS:
     link: https://ecs.sa-east-1.amazonaws.com
   "AWS GovCloud (US)":
     link: https://ecs.us-gov-west-1.amazonaws.com
-UCloud:
-  "北京":
-    link: http://www.cn-bj.ufileos.com
-  "上海二":
-    link: http://www.cn-sh2.ufileos.com
-  "香港":
-    link: http://www.hk.ufileos.com
-  "广东":
-    link: http://www.cn-gd.ufileos.com
-  "美国 (洛杉矶)":
-    link: http://www.us-ca.ufileos.com
-  "雅加达 (印度尼西亚)":
-    link: http://www.idn-jakarta.ufileos.com
-  "新加坡":
-    link: http://www.sg.ufileos.com
-  "尼日利亚":
-    link: http://www.afr-nigeria.ufileos.com
 BandwagonHost:
   "香港 PCCW - HKHK_1":
     link: http://23.252.97.148
