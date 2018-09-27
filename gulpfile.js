@@ -3,7 +3,6 @@ let autoprefixer = require('gulp-autoprefixer');
 let cleanCSS = require('gulp-clean-css');
 let babel = require('gulp-babel');
 let uglify = require('gulp-uglify');
-let rename = require("gulp-rename");
 let htmlmin = require("gulp-htmlmin");
 let htmlclean = require("gulp-htmlclean");
 let del = require('del');
@@ -36,7 +35,6 @@ function minifyJS() {
                 comments: /^!/
             }
         }))
-        .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('dist'));
 }
 
@@ -44,7 +42,6 @@ function minifyCSS() {
     return gulp.src('src/**/*.css')
         .pipe(autoprefixer(configs.autoprefixer))
         .pipe(cleanCSS(configs.cleanCSS))
-        .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('dist'));
 }
 
@@ -66,8 +63,6 @@ function yml2json() {
         .pipe(gulp.dest('./dist/'))
 }
 
-
-
 function copyDist() {
     return gulp.src('dist/**/*')
         .pipe(gulp.dest('public'))
@@ -80,7 +75,8 @@ function copyAssets() {
 
 function clean() {
     return del([
-        'public/**/*'
+        'public/**/*',
+        'dist/**/*'
     ]);
 }
 
