@@ -13,3 +13,4 @@ _build
 public
 
 dist
+src/server.json

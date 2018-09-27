@@ -562,3 +562,58 @@ Virmach:
       25MB: /25MB.test
       50MB: /50MB.test
       100MB: /100MB.test
+Azure:
+  "West Europe":
+    link: http://speedtestwe.blob.core.windows.net
+  "Southeast Asia":
+    link: http://speedtestsea.blob.core.windows.net
+  "East Asia":
+    link: http://speedtestea.blob.core.windows.net
+  "North Central US":
+    link: http://speedtestnsus.blob.core.windows.net
+  "North Europe":
+    link: http://speedtestne.blob.core.windows.net
+  "South Central US":
+    link: http://speedtestscus.blob.core.windows.net
+  "West US":
+    link: http://speedtestwus.blob.core.windows.net
+  "East US":
+    link: http://speedtesteus.blob.core.windows.net
+  "Japan East":
+    link: http://speedtestjpe.blob.core.windows.net
+  "Japan West":
+    link: http://speedtestjpw.blob.core.windows.net
+  "Brazil South":
+    link: http://speedtestbs.blob.core.windows.net
+  "Central US":
+    link: http://speedtestcus.blob.core.windows.net
+  "East US 2":
+    link: http://speedtesteus2.blob.core.windows.net
+  "Australia Southeast":
+    link: http://mickmel.blob.core.windows.net
+  "Australia East":
+    link: http://micksyd.blob.core.windows.net
+  "West UK":
+    link: http://speedtestukw.blob.core.windows.net
+  "South UK":
+    link: http://speedtestuks.blob.core.windows.net
+  "Canada Central":
+    link: http://speedtestcac.blob.core.windows.net
+  "Canada East":
+    link: http://speedtestcae.blob.core.windows.net
+  "West US 2":
+    link: http://speedtestwestus2.blob.core.windows.net
+  "West India":
+    link: http://speedtestwestindia.blob.core.windows.net
+  "East India":
+    link: http://speedtesteastindia.blob.core.windows.net
+  "Central India":
+    link: http://speedtestcentralindia.blob.core.windows.net
+  "Korea Central":
+    link: http://speedtestkoreacentral.blob.core.windows.net
+  "Korea South":
+    link: http://speedtestkoreasouth.blob.core.windows.net
+  "West Central US":
+    link: http://speedtestwestcentralus.blob.core.windows.net
+  "France Central":
+    link: http://speedtestfrc.blob.core.windows.net
