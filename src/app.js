@@ -18,5 +18,7 @@ get = (url) =>
 get("server.json").then(json => {
     Object.keys(json).forEach((value, index) => {
         console.log(value);
+        var html = '<h2 class="h4 sk-text-dark sk-mt-8 sk-mb-6">' + value + '</h2>'
+        document.getElementById('app').insertAdjacentHTML('beforeend', html);
     });
 });
