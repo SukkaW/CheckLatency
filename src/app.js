@@ -14,14 +14,41 @@ get = (url) =>
     })/*.catch(error => {
         throw error;
     })*/;
+
+/*
+ Promise Timeout Helper
+*/
+
+function delayPromise(ms) {
+    return new Promise(function (resolve) {
+        setTimeout(resolve, ms);
+    });
+}
+
+function timeoutPromise(promise, ms) {
+    var timeout = delayPromise(ms).then(function () {
+        throw new Error('Operation timed out after ' + ms + ' ms');
+    });
+    return Promise.race([promise, timeout]);
+}
+
+/*
+ loadImage
+*/
+
+function loadImage(url) {
+    var img = new Image();
+    img.src = url;
+}
+
 function renderCard() {
     get("server.json").then(json => {
         Object.keys(json).forEach((value, index) => {
-            var html = '<h2 class="h4 sk-text-dark sk-mt-8 sk-mb-2 sk-text-bold">' + value + '</h2>';
+            let html = '<h2 class="h4 sk-text-dark sk-mt-8 sk-mb-2 sk-text-bold">' + value + '</h2>';
             html += '<div class="columns">';
             var region = json[value];
             Object.keys(region).forEach((value, index) => {
-                var name = value;
+                let name = value;
                 var region_data = region[value];
                 var domain = region_data.link.replace('http://', '').replace('https://', '');
                 if (region_data.dl) {
@@ -35,27 +62,27 @@ function renderCard() {
                     var testfile = '';
                 }
                 var cloudItem = `
-            <div class="column col-xs-12 col-md-6 col-xl-4 col-3 sk-pt-3">
-                <div class="card sk-shadow-1">
-                    <div class="card-header">
-                        <div class="card-title text-bold h5">${name}</div>
-                        <div class="card-subtitle text-gray sk-text-small">${domain}</div>
+                <div class="column col-xs-12 col-md-6 col-xl-4 col-3 sk-pt-3">
+                    <div class="card sk-shadow-1">
+                        <div class="card-header">
+                            <div class="card-title text-bold h5">${name}</div>
+                            <div class="card-subtitle text-gray sk-text-small">${domain}</div>
+                        </div>
+                        <div class="card-body">
+                            <meter class="meter" value="20" min="0" max="100"></meter>
+                            <p class="text-center sk-text-dark mb-0"><small>100ms</small></p>
+                        </div>
+                        ${testfile}
                     </div>
-                    <div class="card-body">
-                        <meter class="meter" value="20" min="0" max="100"></meter>
-                        <p class="text-center sk-text-dark mb-0"><small>100ms</small></p>
-                    </div>
-                    ${testfile}
                 </div>
-            </div>
-            `;
+                `;
                 html += cloudItem;
             });
             html += '</div>';
             html += '<button id="' + value + '" class="btn btn-primary sk-mt-3 check-latency-button">开始测试</button>';
             document.getElementById('app').insertAdjacentHTML('beforeend', html);
         });
-    }).then(function() {
+    }).then(function () {
         var $btn = document.getElementsByClassName('check-latency-button');
         for (var i = 0; i < $btn.length; i += 1) {
             $btn[i].addEventListener('click', owo);
@@ -69,4 +96,55 @@ function owo() {
     console.log(this.getAttribute('id'))
 }
 
+async function test_dns(data) {
+    data.status = 'preloading dns ...'
 
+    let start = (new Date()).getDate();
+
+    try {
+        let random = Math.random()
+        await timeoutPromise(loadImage(data.url + '/?sukka-checklatency-getdns=' + random), 10000)
+    } catch(error) {
+        console.error(error);
+    }
+
+    let end = (new Date()).getDate();
+
+    if (end - start > 10000) {
+        data.current = data.totol
+        data.status = 'timeout'
+        data.percent = 0
+        data.timeout = end - start
+        data.icon = 'icon-time text-warning'
+    } else {
+        data.current = 0
+    }
+}
+
+async function test_run(data) {
+    data.status = 'Run!'
+
+    let start = (new Date()).getDate();
+
+    try {
+        let random = Math.random()
+        await timeoutPromise(loadImage(data.url + '/?sukka-checklatency-run=' + random), 10000)
+    } catch(error) {
+        console.error(error);
+    }
+
+    let end = (new Date()).getDate();
+
+    if (end - start > 10000) {
+        data.current = data.totol
+        data.status = 'timeout'
+        data.percent = 0
+        data.timeout = end - start
+        data.icon = 'icon-time text-warning'
+    } else {
+        data.current = 0
+        data.status = 'success'
+        data.timeout = end - start
+        data.icon = 'icon-check text-success'
+    }
+}
