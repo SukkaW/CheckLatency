@@ -44,9 +44,9 @@ function loadImage(url) {
 function renderCard() {
     get("server.json").then(json => {
         Object.keys(json).forEach((value, index) => {
-            let html = '<h2 class="h4 sk-text-dark sk-mt-8 sk-mb-2 sk-text-bold">' + value + '</h2>';
+            let html = '<h2 id="' + value + '" class="h4 sk-text-dark sk-mt-7 sk-pt-3 sk-mb-2 sk-text-bold">' + json[value].name + '</h2>';
             html += '<div class="columns">';
-            var region = json[value];
+            var region = json[value].region;
             Object.keys(region).forEach((value, index) => {
                 let name = value;
                 var region_data = region[value];
@@ -95,7 +95,7 @@ renderCard();
 function owo() {
     console.log(this.getAttribute('id'))
 }
-
+/*
 async function test_dns(data) {
     data.status = 'preloading dns ...'
 
@@ -148,3 +148,4 @@ async function test_run(data) {
         data.icon = 'icon-check text-success'
     }
 }
+*/
