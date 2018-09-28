@@ -32,15 +32,6 @@ function timeoutPromise(promise, ms) {
     return Promise.race([promise, timeout]);
 }
 
-/*
- loadImage
-*/
-
-function loadImage(url) {
-    var img = new Image();
-    img.src = url;
-}
-
 function renderCard() {
     get("server.json").then(json => {
         window.serverJson = json;
@@ -50,7 +41,7 @@ function renderCard() {
             let region = json[value].region;
             Object.keys(region).forEach((value, index) => {
                 region[value].url = region[value].link.replace('http://', '').replace('https://', '');
-                if (typeof(region[value].dl) === "undefined") {
+                if (typeof (region[value].dl) === "undefined") {
                     region[value].dl = '';
                 }
                 html += baidu.template('cloud-item-tpl', region[value]);
@@ -70,65 +61,29 @@ function renderCard() {
 renderCard();
 
 function checkLatency() {
+    function loadImage(url) {
+        let startTime = new Date().getTime();
+        let random = Math.random() + startTime;
+        let img = new Image;
+        img.onerror = () => {
+            let stopTime = new Date().getTime();
+            return stopTime - startTime;
+        };
+        img.onload = () => {
+            let stopTime = new Date().getTime();
+            return stopTime - startTime;
+        }
+        img.src = url + random;
+    }
+
     var json = serverJson[this.getAttribute('id')];
+    let pool = Object.keys(json.region).length;
+    let data = [];
     Object.keys(json.region).forEach((value, index) => {
-        let region = json.region[value]
-        let data = [];
-        data.url = region.link
-        console.log(data)
+        data.region = value;
+        data.link = json.region[value].link
+        data.current = loadImage(data.link + '/sukka-checklatency-get-dns?');
     });
 }
-/*
-async function test_dns(data) {
-    data.status = 'preloading dns ...'
 
-    let start = (new Date()).getDate();
 
-    try {
-        let random = Math.random()
-        await timeoutPromise(loadImage(data.url + '/?sukka-checklatency-getdns=' + random), 10000)
-    } catch(error) {
-        console.error(error);
-    }
-
-    let end = (new Date()).getDate();
-
-    if (end - start > 10000) {
-        data.current = data.totol
-        data.status = 'timeout'
-        data.percent = 0
-        data.timeout = end - start
-        data.icon = 'icon-time text-warning'
-    } else {
-        data.current = 0
-    }
-}
-
-async function test_run(data) {
-    data.status = 'Run!'
-
-    let start = (new Date()).getDate();
-
-    try {
-        let random = Math.random()
-        await timeoutPromise(loadImage(data.url + '/?sukka-checklatency-run=' + random), 10000)
-    } catch(error) {
-        console.error(error);
-    }
-
-    let end = (new Date()).getDate();
-
-    if (end - start > 10000) {
-        data.current = data.totol
-        data.status = 'timeout'
-        data.percent = 0
-        data.timeout = end - start
-        data.icon = 'icon-time text-warning'
-    } else {
-        data.current = 0
-        data.status = 'success'
-        data.timeout = end - start
-        data.icon = 'icon-check text-success'
-    }
-}
-*/
