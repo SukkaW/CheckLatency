@@ -366,45 +366,45 @@ AWS:
   "AWS GovCloud (US)":
     link: https://ecs.us-gov-west-1.amazonaws.com
 BandwagonHost:
-  "香港 PCCW - HKHK_1":
+  "香港 PCCW":
     link: http://23.252.97.148
-  "洛杉矶 CN2 GIA - USCA_9 (DC9)":
+  "洛杉矶 CN2 GIA":
     link: http://65.49.131.102
-  "洛杉矶 CN2 (QN) - USCA_3 (DC3)":
+  "洛杉矶 CN2 (QN)":
     link: http://23.252.103.101
-  "洛杉矶 CN2 (C3) - USCA_8 (DC8)":
+  "洛杉矶 CN2 (C3)":
     link: http://23.252.99.102
-  "洛杉矶 QNET - USCA_2 (DC2)":
+  "洛杉矶 QNET":
     link: http://23.252.96.201
     dl:
       100MB: /100mb.bin
       500MB: /500mb.bin
       1000MB: /1000mb.bin
-  "洛杉矶 MCOM - USCA_4 (DC4)":
+  "洛杉矶 MCOM":
     link: http://98.142.136.11
     dl:
       100MB: /100mb.bin
       500MB: /500mb.bin
       1000MB: /1000mb.bin
-  "凤凰城 - USAZ_2":
+  "凤凰城":
     link: http://198.35.46.28
     dl:
       100MB: /100mb.bin
       500MB: /500mb.bin
       1000MB: /1000mb.bin
-  "弗里蒙特 - USCA_FMT":
+  "弗里蒙特":
     link: http://184.105.138.67
     dl:
       100MB: /100mb.bin
       500MB: /500mb.bin
       1000MB: /1000mb.bin
-  "新泽西 - USNJ":
+  "新泽西":
     link: http://23.29.138.3
     dl:
       100MB: /100mb.bin
       500MB: /500mb.bin
       1000MB: /1000mb.bin
-  "纽约 - USNY_2":
+  "纽约":
     link: http://208.167.227.122
     dl:
       100MB: /100mb.bin
@@ -416,13 +416,13 @@ BandwagonHost:
       100MB: /100mb.bin
       500MB: /500mb.bin
       1000MB: /1000mb.bin
-  "荷兰 - EUNL_3":
+  "荷兰":
     link: http://45.62.120.202
     dl:
       100MB: /100mb.bin
       500MB: /500mb.bin
       1000MB: /1000mb.bin
-  "加拿大温哥华 - CABC_1":
+  "加拿大温哥华":
     link: http://172.93.32.16
     dl:
       100MB: /100mb.bin
