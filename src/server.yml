@@ -1,619 +1,651 @@
-DigitalOcean:
-  NYC1:
-    link: http://speedtest-nyc1.digitalocean.com
-    dl:
-      100MB: /100mb.test
-      10MB: /10mb.test
-  NYC2:
-    link: http://speedtest-nyc2.digitalocean.com
-    dl:
-      100MB: /100mb.test
-      10MB: /10mb.test
-  NYC3:
-    link: http://speedtest-nyc3.digitalocean.com
-    dl:
-      100MB: /100mb.test
-      10MB: /10mb.test
-  AMS2:
-    link: http://speedtest-ams2.digitalocean.com
-    dl:
-      100MB: /100mb.test
-      10MB: /10mb.test
-  AMS3:
-    link: http://speedtest-ams3.digitalocean.com
-    dl:
-      100MB: /100mb.test
-      10MB: /10mb.test
-  SFO1:
-    link: http://speedtest-sfo1.digitalocean.com
-    dl:
-      100MB: /100mb.test
-      10MB: /10mb.test
-  SFO2:
-    link: http://speedtest-sfo2.digitalocean.com
-    dl:
-      100MB: /100mb.test
-      10MB: /10mb.test
-  SGP1:
-    link: http://speedtest-sgp1.digitalocean.com
-    dl:
-      100MB: /100mb.test
-      10MB: /10mb.test
-  LON1:
-    link: http://speedtest-lon1.digitalocean.com
-    dl:
-      100MB: /100mb.test
-      10MB: /10mb.test
-  FRA1:
-    link: http://speedtest-fra1.digitalocean.com
-    dl:
-      100MB: /100mb.test
-      10MB: /10mb.test
-  TOR1:
-    link: http://speedtest-tor1.digitalocean.com
-    dl:
-      100MB: /100mb.test
-      10MB: /10mb.test
-  BRA1:
-    link: http://speedtest-blr1.digitalocean.com
-    dl:
-      100MB: /100mb.test
-      10MB: /10mb.test
-Vultr:
-  "FRA-DE":
-    link: https://hnd-jp-ping.vultr.com
-    dl:
-      1GB: /vultr.com.1000MB.bin
-      100MB: /vultr.com.100MB.bin
-  "AMS-NL":
-    link: https://ams-nl-ping.vultr.com
-    dl:
-      1GB: /vultr.com.1000MB.bin
-      100MB: /vultr.com.100MB.bin
-  "PAR-FR":
-    link: https://par-fr-ping.vultr.com
-    dl:
-      1GB: /vultr.com.1000MB.bin
-      100MB: /vultr.com.100MB.bin
-  "LON-GB":
-    link: https://lon-gb-ping.vultr.com
-    dl:
-      1GB: /vultr.com.1000MB.bin
-      100MB: /vultr.com.100MB.bin
-  "SGP":
-    link: https://sgp-ping.vultr.com
-    dl:
-      1GB: /vultr.com.1000MB.bin
-      100MB: /vultr.com.100MB.bin
-  "HND-JP":
-    link: https://hnd-jp-ping.vultr.com
-    dl:
-      1GB: /vultr.com.1000MB.bin
-      100MB: /vultr.com.100MB.bin
-  "NJ-US":
-    link: https://nj-us-ping.vultr.com
-    dl:
-      1GB: /vultr.com.1000MB.bin
-      100MB: /vultr.com.100MB.bin
-  "IL-US":
-    link: https://il-us-ping.vultr.com
-    dl:
-      1GB: /vultr.com.1000MB.bin
-      100MB: /vultr.com.100MB.bin
-  "GA-US":
-    link: https://ga-us-ping.vultr.com
-    dl:
-      1GB: /vultr.com.1000MB.bin
-      100MB: /vultr.com.100MB.bin
-  "FL-US":
-    link: https://fl-us-ping.vultr.com
-    dl:
-      1GB: /vultr.com.1000MB.bin
-      100MB: /vultr.com.100MB.bin
-  "WA-US":
-    link: https://wa-us-ping.vultr.com
-    dl:
-      1GB: /vultr.com.1000MB.bin
-      100MB: /vultr.com.100MB.bin
-  "TX-US":
-    link: https://tx-us-ping.vultr.com
-    dl:
-      1GB: /vultr.com.1000MB.bin
-      100MB: /vultr.com.100MB.bin
-  "SJO-CA-US":
-    link: https://sjo-ca-us-ping.vultr.com
-    dl:
-      1GB: /vultr.com.1000MB.bin
-      100MB: /vultr.com.100MB.bin
-  "LAX-CA-US":
-    link: https://lax-ca-us-ping.vultr.com
-    dl:
-      1GB: /vultr.com.1000MB.bin
-      100MB: /vultr.com.100MB.bin
-  "SYD-AU":
-    link: https://syd-au-ping.vultr.com
-    dl:
-      1GB: /vultr.com.1000MB.bin
-      100MB: /vultr.com.100MB.bin
-Linode:
-  "Newark":
-    link: http://speedtest.newark.linode.com
-    dl:
-      100MB: /100MB-newark.bin
-  "Atlanta":
-    link: http://speedtest.atlanta.linode.com
-    dl:
-      100MB: /100MB-atlanta.bin
-  "Dallas":
-    link: http://speedtest.dallas.linode.com
-    dl:
-      100MB: /100MB-dallas.bin
-  "Fremont":
-    link: http://speedtest.fremont.linode.com
-    dl:
-      100MB: /100MB-fremont.bin
-  "Frankufurt":
-    link: http://speedtest.frankfurt.linode.com
-    dl:
-      100MB: /100MB-frankfurt.bin
-  "London":
-    link: http://speedtest.london.linode.com
-    dl:
-      100MB: /100MB-london.bin
-  "Singapore":
-    link: http://speedtest.singapore.linode.com
-    dl:
-      100MB: /100MB-singapore.bin
-  "Tokyo":
-    link: http://speedtest.tokyo2.linode.com
-    dl:
-      100MB: /100MB-tokyo2.bin
-"阿里云":
-  "华东 1 杭州":
-    link: https://oss-cn-hangzhou.aliyuncs.com
-  "华东 2 上海":
-    link: https://oss-cn-shanghai.aliyuncs.com
-  "华北 1 青岛":
-    link: https://oss-cn-qingdao.aliyuncs.com
-  "华北 2 北京":
-    link: https://oss-cn-beijing.aliyuncs.com
-  "华北 3 张家口":
-    link: https://oss-cn-zhangjiakou.aliyuncs.com
-  "华北 5 呼和浩特":
-    link: https://oss-cn-huhehaote.aliyuncs.com
-  "华南 1 深圳":
-    link: https://oss-cn-shenzhen.aliyuncs.com
-  "香港":
-    link: https://oss-cn-hongkong.aliyuncs.com
-  "美国西部 1 硅谷":
-    link: https://oss-us-west-1.aliyuncs.com
-  "美国东部 1 弗吉尼亚":
-    link: https://oss-us-east-1.aliyuncs.com
-  "亚太东南 1 新加坡":
-    link: https://oss-ap-southeast-1.aliyuncs.com
-  "亚太东南 2 澳大利亚悉尼":
-    link: https://oss-ap-southeast-2.aliyuncs.com
-  "亚太东南 3 马来西亚吉隆坡":
-    link: https://oss-ap-southeast-3.aliyuncs.com
-  "亚太东南 5 印度尼西亚雅加达":
-    link: https://oss-ap-southeast-5.aliyuncs.com
-  "亚太东北 1 日本东京":
-    link: https://oss-ap-northeast-1.aliyuncs.com
-  "亚太南部 1 印度孟买":
-    link: https://oss-ap-south-1.aliyuncs.com
-  "欧洲中部 1 德国法兰克福":
-    link: https://oss-eu-central-1.aliyuncs.com
-  "中东东部 1 阿联酋迪拜":
-    link: https://oss-me-east-1.aliyuncs.com
-"腾讯云":
-  "华北 - 北京 1 区":
-    link: https://cos.ap-beijing-1.myqcloud.com
-  "华北 - 北京":
-    link: https://cos.ap-beijing.myqcloud.com
-  "华东 - 上海":
-    link: https://cos.ap-shanghai.myqcloud.com
-  "华东 - 上海 金融云":
-    link: https://cbs.ap-shanghai-fsi.tencentcloudapi.com
-  "华南 - 广州":
-    link: https://cos.ap-guangzhou.myqcloud.com
-  "华南 - 深圳 金融云":
-    link: https://cbs.ap-shenzhen-fsi.tencentcloudapi.com
-  "西南 - 成都":
-    link: https://cos.ap-chengdu.myqcloud.com
-  "西南 - 重庆":
-    link: https://cos.ap-chongqing.myqcloud.com
-  "东南亚 - 新加坡":
-    link: https://cos.ap-singapore.myqcloud.com
-  "香港":
-    link: http://119.28.35.63
-  "加拿大多伦多":
-    link: https://cos.na-toronto.myqcloud.com
-  "德国法兰克福":
-    link: https://cos.eu-frankfurt.myqcloud.com
-  "东南亚 - 印度孟买":
-    link: https://cos.ap-mumbai.myqcloud.com
-  "东南亚 - 韩国首尔":
-    link: https://cos.ap-seoul.myqcloud.com
-  "美国西部 - 硅谷":
-    link: https://cos.na-siliconvalley.myqcloud.com
-  "美国东部 - 弗吉尼亚阿什本":
-    link: https://cos.na-ashburn.myqcloud.com
-  "泰国曼谷":
-    link: https://cos.ap-bangkok.myqcloud.com
-  "俄罗斯莫斯科":
-    link: https://cos.eu-moscow.myqcloud.com
-UCloud:
-  "北京":
-    link: http://www.cn-bj.ufileos.com
-  "上海二":
-    link: http://www.cn-sh2.ufileos.com
-  "香港":
-    link: http://www.hk.ufileos.com
-  "广东":
-    link: http://www.cn-gd.ufileos.com
-  "美国 (洛杉矶)":
-    link: http://www.us-ca.ufileos.com
-  "雅加达 (印度尼西亚)":
-    link: http://www.idn-jakarta.ufileos.com
-  "新加坡":
-    link: http://www.sg.ufileos.com
-  "尼日利亚":
-    link: http://www.afr-nigeria.ufileos.com
-"百度云":
-  "华北 - 北京":
-    link: http://www.bj.bcebos.com
-  "华南 - 广州":
-    link: http://www.gz.bcebos.com
-  "华东 - 苏州":
-    link: http://www.su.bcebos.com
-"京东云":
-  "华北 - 北京":
-    link: https://s3.cn-north-1.jcloudcs.com
-  "华东 - 宿迁":
-    link: https://s3.cn-east-1.jcloudcs.com
-  "华东 - 上海":
-    link: https://s3.cn-east-2.jcloudcs.com
-  "华南 - 广州":
-    link: https://s3.cn-south-1.jcloudcs.com
-"华为云":
-  "华北 - 北京一":
-    link: https://ecs.cn-north-1.myhuaweicloud.com
-  "华东 - 上海二":
-    link: https://ecs.cn-east-2.myhuaweicloud.com
-  "华南 - 广州":
-    link: https://ecs.cn-south-1.myhuaweicloud.com
-  "东北 - 大连":
-    link: https://ecs.cn-northeast-1.myhuaweicloud.com
-  "亚太 - 香港":
-    link: https://ecs.ap-southeast-1.myhwclouds.com
-"青云":
-  "北京 3 区 - A":
-    link: http://mybucket.pek3a.qingstor.com
-  "上海 1 区 - A":
-    link: http://mybucket1.sh1a.qingstor.com
-"Google Cloud Platform":
-  "美洲 - 巴西 圣保罗 (southamerica-east1)":
-    link: http://35.198.10.68
-  "美洲 - 美国 爱荷华州 (us-central1)":
-    link: http://104.197.165.8
-  "美洲 - 美国 南卡罗来纳州 (us-east1)":
-    link: http://104.196.161.21
-  "美洲 - 美国 北弗吉尼亚 (us-east4)":
-    link: http://35.186.168.152
-  "美洲 - 美国 俄勒冈州 (us-west1)":
-    link: http://104.199.116.74
-  "美洲 - 美国 洛杉矶 (us-west2)":
-    link: http://35.236.45.25
-  "美洲 - 加拿大 蒙特利尔 (northamerica-northeast1)":
-    link: http://35.203.57.164
-  "亚太 - 台湾 彰化 (asia-east1)":
-    link: http://104.155.201.52
-  "亚太 - 日本 东京 (asia-northeast1)":
-    link: http://104.198.86.148
-  "亚太 - 印度 孟买 (asia-south1)":
-    link: http://35.200.186.152
-  "亚太 - 新加坡 (asia-southeast1)":
-    link: http://35.185.179.198
-  "亚太 - 澳大利亚 悉尼 (australia-southeast1)":
-    link: http://35.189.6.113
-  "欧洲 - 芬兰 哈米纳 (europe-north1)":
-    link: http://35.228.170.201
-  "欧洲 - 比利时 圣吉斯兰 (europe-west1)":
-    link: http://104.199.82.109
-  "欧洲 - 英国 伦敦 (europe-west2)":
-    link: http://35.189.67.146
-  "欧洲 - 德国 法兰克福 (europe-west3)":
-    link: http://35.198.78.172
-  "欧洲 - 荷兰 格罗宁根 (europe-west4)":
-    link: http://35.204.93.82
-  "Google Global Balancer (Anycast)":
-    link: http://35.186.221.153
-AWS:
-  "US East (Ohio)":
-    link: https://ecs.us-east-2.amazonaws.com
-  "US East (N. Virginia)":
-    link: https://ecs.us-east-1.amazonaws.com
-  "US West (N. California)":
-    link: https://ecs.us-west-1.amazonaws.com
-  "US West (Oregon)":
-    link: https://ecs.us-west-2.amazonaws.com
-  "Asia Pacific (Mumbai)":
-    link: https://ecs.ap-south-1.amazonaws.com
-  "Asia Pacific (Seoul)":
-    link: https://ecs.ap-northeast-2.amazonaws.com
-  "Asia Pacific (Singapore)":
-    link: https://ecs.ap-southeast-1.amazonaws.com
-  "Asia Pacific (Sydney)":
-    link: https://ecs.ap-southeast-2.amazonaws.com
-  "Asia Pacific (Tokyo)":
-    link: https://ecs.ap-northeast-1.amazonaws.com
-  "Canada (Central)":
-    link: https://ecs.ca-central-1.amazonaws.com
-  "China (Beijing)":
-    link: https://ecs.cn-north-1.amazonaws.com.cn
-  "China (Ningxia)":
-    link: https://ecs.cn-northwest-1.amazonaws.com.cn
-  "EU (Frankfurt)":
-    link: https://ecs.eu-central-1.amazonaws.com
-  "EU (Ireland)":
-    link: https://ecs.eu-west-1.amazonaws.com
-  "EU (London)":
-    link: https://ecs.eu-west-2.amazonaws.com
-  "EU (Paris)":
-    link: https://ecs.eu-west-3.amazonaws.com
-  "South America (São Paulo)":
-    link: https://ecs.sa-east-1.amazonaws.com
-  "AWS GovCloud (US)":
-    link: https://ecs.us-gov-west-1.amazonaws.com
-BandwagonHost:
-  "香港 PCCW":
-    link: http://23.252.97.148
-  "洛杉矶 CN2 GIA":
-    link: http://65.49.131.102
-  "洛杉矶 CN2 (QN)":
-    link: http://23.252.103.101
-  "洛杉矶 CN2 (C3)":
-    link: http://23.252.99.102
-  "洛杉矶 QNET":
-    link: http://23.252.96.201
-    dl:
-      100MB: /100mb.bin
-      500MB: /500mb.bin
-      1000MB: /1000mb.bin
-  "洛杉矶 MCOM":
-    link: http://98.142.136.11
-    dl:
-      100MB: /100mb.bin
-      500MB: /500mb.bin
-      1000MB: /1000mb.bin
-  "凤凰城":
-    link: http://198.35.46.28
-    dl:
-      100MB: /100mb.bin
-      500MB: /500mb.bin
-      1000MB: /1000mb.bin
-  "弗里蒙特":
-    link: http://184.105.138.67
-    dl:
-      100MB: /100mb.bin
-      500MB: /500mb.bin
-      1000MB: /1000mb.bin
-  "新泽西":
-    link: http://23.29.138.3
-    dl:
-      100MB: /100mb.bin
-      500MB: /500mb.bin
-      1000MB: /1000mb.bin
-  "纽约":
-    link: http://208.167.227.122
-    dl:
-      100MB: /100mb.bin
-      500MB: /500mb.bin
-      1000MB: /1000mb.bin
-  "弗罗里达":
-    link: http://23.252.104.22
-    dl:
-      100MB: /100mb.bin
-      500MB: /500mb.bin
-      1000MB: /1000mb.bin
-  "荷兰":
-    link: http://45.62.120.202
-    dl:
-      100MB: /100mb.bin
-      500MB: /500mb.bin
-      1000MB: /1000mb.bin
-  "加拿大温哥华":
-    link: http://172.93.32.16
-    dl:
-      100MB: /100mb.bin
-      500MB: /500mb.bin
-      1000MB: /1000mb.bin
-HostUS:
-  "ATL01":
-    link: https://atl-lg.hostus.us
-    dl: 
-      10MB: /10MB.test
-      100MB: /100MB.test
-  "CLT01":
-    link: https://clt-lg.hostus.us
-    dl: 
-      10MB: /10MB.test
-      100MB: /100MB.test
-  "DLA01":
-    link: https://dal-lg.hostus.us
-    dl: 
-      10MB: /10MB.test
-      100MB: /100MB.test
-  "DLA02":
-    link: https://dal-lg.hostus.us
-    dl: 
-      10MB: /10MB.test
-      100MB: /100MB.test
-  "LAX01":
-    link: https://la-lg.hostus.us
-    dl: 
-      10MB: /10MB.test
-      100MB: /100MB.test
-  "LAX02":
-    link: https://la02-lg.hostus.us
-    dl: 
-      10MB: /10MB.test
-      100MB: /100MB.test
-  "LAX03":
-    link: https://la03-lg.hostus.us
-    dl: 
-      10MB: /10MB.test
-      100MB: /100MB.test
-  "HKG01":
-    link: https://hk-lg.hostus.us
-    dl: 
-      10MB: /10MB.test
-      100MB: /100MB.test
-  "SYD01":
-    link: https://syd-lg.hostus.us
-    dl: 
-      10MB: /10MB.test
-      100MB: /100MB.test
-  "SGP01":
-    link: https://sgp-lg.hostus.us
-    dl: 
-      10MB: /10MB.test
-      100MB: /100MB.test
-  "LON01":
-    link: https://lon-lg.hostus.us
-    dl: 
-      10MB: /10MB.test
-      100MB: /100MB.test
-  "AMS01":
-    link: https://ams-lg.hostus.us
-    dl: 
-      10MB: /10MB.test
-      100MB: /100MB.test
-Virmach:
-  "Frankfurt, Germany":
-    link: http://ffm.lg.virmach.com
-    dl:
-      25MB: /25MB.test
-      50MB: /50MB.test
-      100MB: /100MB.test
-  "Amsterdam, Netherlands":
-    link: http://ams.lg.virmach.com
-    dl:
-      25MB: /25MB.test
-      50MB: /50MB.test
-      100MB: /100MB.test
-  "Buffalo":
-    link: http://ny.lg.virmach.com
-    dl:
-      25MB: /25MB.test
-      50MB: /50MB.test
-      100MB: /100MB.test
-  "Piscataway (NYC)":
-    link: http://nj.lg.virmach.com
-    dl:
-      25MB: /25MB.test
-      50MB: /50MB.test
-      100MB: /100MB.test
-  "Dallas":
-    link: http://dal.lg.virmach.com
-    dl:
-      25MB: /25MB.test
-      50MB: /50MB.test
-      100MB: /100MB.test
-  "Phoenix":
-    link: http://phx.lg.virmach.com
-    dl:
-      25MB: /25MB.test
-      50MB: /50MB.test
-      100MB: /100MB.test
-  "Los Angeles":
-    link: http://la.lg.virmach.com
-    dl:
-      25MB: /25MB.test
-      50MB: /50MB.test
-      100MB: /100MB.test
-  "DDoS-Protected Los Angeles":
-    link: http://filtered-la.lg.virmach.com
-    dl:
-      25MB: /25MB.test
-      50MB: /50MB.test
-      100MB: /100MB.test
-  "Chicago":
-    link: http://chi.lg.virmach.com
-    dl:
-      25MB: /25MB.test
-      50MB: /50MB.test
-      100MB: /100MB.test
-  "Seattle":
-    link: http://sea.lg.virmach.com
-    dl:
-      25MB: /25MB.test
-      50MB: /50MB.test
-      100MB: /100MB.test
-  "Atlanta":
-    link: http://atl.lg.virmach.com
-    dl:
-      25MB: /25MB.test
-      50MB: /50MB.test
-      100MB: /100MB.test
-  "San Jose":
-    link: http://sj.lg.virmach.com
-    dl:
-      25MB: /25MB.test
-      50MB: /50MB.test
-      100MB: /100MB.test
-Azure:
-  "West Europe":
-    link: http://speedtestwe.blob.core.windows.net
-  "Southeast Asia":
-    link: http://speedtestsea.blob.core.windows.net
-  "East Asia":
-    link: http://speedtestea.blob.core.windows.net
-  "North Central US":
-    link: http://speedtestnsus.blob.core.windows.net
-  "North Europe":
-    link: http://speedtestne.blob.core.windows.net
-  "South Central US":
-    link: http://speedtestscus.blob.core.windows.net
-  "West US":
-    link: http://speedtestwus.blob.core.windows.net
-  "East US":
-    link: http://speedtesteus.blob.core.windows.net
-  "Japan East":
-    link: http://speedtestjpe.blob.core.windows.net
-  "Japan West":
-    link: http://speedtestjpw.blob.core.windows.net
-  "Brazil South":
-    link: http://speedtestbs.blob.core.windows.net
-  "Central US":
-    link: http://speedtestcus.blob.core.windows.net
-  "East US 2":
-    link: http://speedtesteus2.blob.core.windows.net
-  "Australia Southeast":
-    link: http://mickmel.blob.core.windows.net
-  "Australia East":
-    link: http://micksyd.blob.core.windows.net
-  "West UK":
-    link: http://speedtestukw.blob.core.windows.net
-  "South UK":
-    link: http://speedtestuks.blob.core.windows.net
-  "Canada Central":
-    link: http://speedtestcac.blob.core.windows.net
-  "Canada East":
-    link: http://speedtestcae.blob.core.windows.net
-  "West US 2":
-    link: http://speedtestwestus2.blob.core.windows.net
-  "West India":
-    link: http://speedtestwestindia.blob.core.windows.net
-  "East India":
-    link: http://speedtesteastindia.blob.core.windows.net
-  "Central India":
-    link: http://speedtestcentralindia.blob.core.windows.net
-  "Korea Central":
-    link: http://speedtestkoreacentral.blob.core.windows.net
-  "Korea South":
-    link: http://speedtestkoreasouth.blob.core.windows.net
-  "West Central US":
-    link: http://speedtestwestcentralus.blob.core.windows.net
-  "France Central":
-    link: http://speedtestfrc.blob.core.windows.net
+do:
+  name: DigitalOcean
+  region:
+    NYC1:
+      link: http://speedtest-nyc1.digitalocean.com
+      dl:
+        100MB: /100mb.test
+        10MB: /10mb.test
+    NYC2:
+      link: http://speedtest-nyc2.digitalocean.com
+      dl:
+        100MB: /100mb.test
+        10MB: /10mb.test
+    NYC3:
+      link: http://speedtest-nyc3.digitalocean.com
+      dl:
+        100MB: /100mb.test
+        10MB: /10mb.test
+    AMS2:
+      link: http://speedtest-ams2.digitalocean.com
+      dl:
+        100MB: /100mb.test
+        10MB: /10mb.test
+    AMS3:
+      link: http://speedtest-ams3.digitalocean.com
+      dl:
+        100MB: /100mb.test
+        10MB: /10mb.test
+    SFO1:
+      link: http://speedtest-sfo1.digitalocean.com
+      dl:
+        100MB: /100mb.test
+        10MB: /10mb.test
+    SFO2:
+      link: http://speedtest-sfo2.digitalocean.com
+      dl:
+        100MB: /100mb.test
+        10MB: /10mb.test
+    SGP1:
+      link: http://speedtest-sgp1.digitalocean.com
+      dl:
+        100MB: /100mb.test
+        10MB: /10mb.test
+    LON1:
+      link: http://speedtest-lon1.digitalocean.com
+      dl:
+        100MB: /100mb.test
+        10MB: /10mb.test
+    FRA1:
+      link: http://speedtest-fra1.digitalocean.com
+      dl:
+        100MB: /100mb.test
+        10MB: /10mb.test
+    TOR1:
+      link: http://speedtest-tor1.digitalocean.com
+      dl:
+        100MB: /100mb.test
+        10MB: /10mb.test
+    BRA1:
+      link: http://speedtest-blr1.digitalocean.com
+      dl:
+        100MB: /100mb.test
+        10MB: /10mb.test
+vultr:
+  name: Vultr
+  region:
+    "FRA-DE":
+      link: https://hnd-jp-ping.vultr.com
+      dl:
+        1GB: /vultr.com.1000MB.bin
+        100MB: /vultr.com.100MB.bin
+    "AMS-NL":
+      link: https://ams-nl-ping.vultr.com
+      dl:
+        1GB: /vultr.com.1000MB.bin
+        100MB: /vultr.com.100MB.bin
+    "PAR-FR":
+      link: https://par-fr-ping.vultr.com
+      dl:
+        1GB: /vultr.com.1000MB.bin
+        100MB: /vultr.com.100MB.bin
+    "LON-GB":
+      link: https://lon-gb-ping.vultr.com
+      dl:
+        1GB: /vultr.com.1000MB.bin
+        100MB: /vultr.com.100MB.bin
+    "SGP":
+      link: https://sgp-ping.vultr.com
+      dl:
+        1GB: /vultr.com.1000MB.bin
+        100MB: /vultr.com.100MB.bin
+    "HND-JP":
+      link: https://hnd-jp-ping.vultr.com
+      dl:
+        1GB: /vultr.com.1000MB.bin
+        100MB: /vultr.com.100MB.bin
+    "NJ-US":
+      link: https://nj-us-ping.vultr.com
+      dl:
+        1GB: /vultr.com.1000MB.bin
+        100MB: /vultr.com.100MB.bin
+    "IL-US":
+      link: https://il-us-ping.vultr.com
+      dl:
+        1GB: /vultr.com.1000MB.bin
+        100MB: /vultr.com.100MB.bin
+    "GA-US":
+      link: https://ga-us-ping.vultr.com
+      dl:
+        1GB: /vultr.com.1000MB.bin
+        100MB: /vultr.com.100MB.bin
+    "FL-US":
+      link: https://fl-us-ping.vultr.com
+      dl:
+        1GB: /vultr.com.1000MB.bin
+        100MB: /vultr.com.100MB.bin
+    "WA-US":
+      link: https://wa-us-ping.vultr.com
+      dl:
+        1GB: /vultr.com.1000MB.bin
+        100MB: /vultr.com.100MB.bin
+    "TX-US":
+      link: https://tx-us-ping.vultr.com
+      dl:
+        1GB: /vultr.com.1000MB.bin
+        100MB: /vultr.com.100MB.bin
+    "SJO-CA-US":
+      link: https://sjo-ca-us-ping.vultr.com
+      dl:
+        1GB: /vultr.com.1000MB.bin
+        100MB: /vultr.com.100MB.bin
+    "LAX-CA-US":
+      link: https://lax-ca-us-ping.vultr.com
+      dl:
+        1GB: /vultr.com.1000MB.bin
+        100MB: /vultr.com.100MB.bin
+    "SYD-AU":
+      link: https://syd-au-ping.vultr.com
+      dl:
+        1GB: /vultr.com.1000MB.bin
+        100MB: /vultr.com.100MB.bin
+linode:
+  name: Linode
+  region:
+    "Newark":
+      link: http://speedtest.newark.linode.com
+      dl:
+        100MB: /100MB-newark.bin
+    "Atlanta":
+      link: http://speedtest.atlanta.linode.com
+      dl:
+        100MB: /100MB-atlanta.bin
+    "Dallas":
+      link: http://speedtest.dallas.linode.com
+      dl:
+        100MB: /100MB-dallas.bin
+    "Fremont":
+      link: http://speedtest.fremont.linode.com
+      dl:
+        100MB: /100MB-fremont.bin
+    "Frankufurt":
+      link: http://speedtest.frankfurt.linode.com
+      dl:
+        100MB: /100MB-frankfurt.bin
+    "London":
+      link: http://speedtest.london.linode.com
+      dl:
+        100MB: /100MB-london.bin
+    "Singapore":
+      link: http://speedtest.singapore.linode.com
+      dl:
+        100MB: /100MB-singapore.bin
+    "Tokyo":
+      link: http://speedtest.tokyo2.linode.com
+      dl:
+        100MB: /100MB-tokyo2.bin
+aliyun:
+  name: "阿里云"
+  region:
+    "华东 1 杭州":
+      link: https://oss-cn-hangzhou.aliyuncs.com
+    "华东 2 上海":
+      link: https://oss-cn-shanghai.aliyuncs.com
+    "华北 1 青岛":
+      link: https://oss-cn-qingdao.aliyuncs.com
+    "华北 2 北京":
+      link: https://oss-cn-beijing.aliyuncs.com
+    "华北 3 张家口":
+      link: https://oss-cn-zhangjiakou.aliyuncs.com
+    "华北 5 呼和浩特":
+      link: https://oss-cn-huhehaote.aliyuncs.com
+    "华南 1 深圳":
+      link: https://oss-cn-shenzhen.aliyuncs.com
+    "香港":
+      link: https://oss-cn-hongkong.aliyuncs.com
+    "美国西部 1 硅谷":
+      link: https://oss-us-west-1.aliyuncs.com
+    "美国东部 1 弗吉尼亚":
+      link: https://oss-us-east-1.aliyuncs.com
+    "亚太东南 1 新加坡":
+      link: https://oss-ap-southeast-1.aliyuncs.com
+    "亚太东南 2 澳大利亚悉尼":
+      link: https://oss-ap-southeast-2.aliyuncs.com
+    "亚太东南 3 马来西亚吉隆坡":
+      link: https://oss-ap-southeast-3.aliyuncs.com
+    "亚太东南 5 印度尼西亚雅加达":
+      link: https://oss-ap-southeast-5.aliyuncs.com
+    "亚太东北 1 日本东京":
+      link: https://oss-ap-northeast-1.aliyuncs.com
+    "亚太南部 1 印度孟买":
+      link: https://oss-ap-south-1.aliyuncs.com
+    "欧洲中部 1 德国法兰克福":
+      link: https://oss-eu-central-1.aliyuncs.com
+    "中东东部 1 阿联酋迪拜":
+      link: https://oss-me-east-1.aliyuncs.com
+qcloud:
+  name: "腾讯云"
+  region:
+    "华北 - 北京 1 区":
+      link: https://cos.ap-beijing-1.myqcloud.com
+    "华北 - 北京":
+      link: https://cos.ap-beijing.myqcloud.com
+    "华东 - 上海":
+      link: https://cos.ap-shanghai.myqcloud.com
+    "华东 - 上海 金融云":
+      link: https://cbs.ap-shanghai-fsi.tencentcloudapi.com
+    "华南 - 广州":
+      link: https://cos.ap-guangzhou.myqcloud.com
+    "华南 - 深圳 金融云":
+      link: https://cbs.ap-shenzhen-fsi.tencentcloudapi.com
+    "西南 - 成都":
+      link: https://cos.ap-chengdu.myqcloud.com
+    "西南 - 重庆":
+      link: https://cos.ap-chongqing.myqcloud.com
+    "东南亚 - 新加坡":
+      link: https://cos.ap-singapore.myqcloud.com
+    "香港":
+      link: http://119.28.35.63
+    "加拿大多伦多":
+      link: https://cos.na-toronto.myqcloud.com
+    "德国法兰克福":
+      link: https://cos.eu-frankfurt.myqcloud.com
+    "东南亚 - 印度孟买":
+      link: https://cos.ap-mumbai.myqcloud.com
+    "东南亚 - 韩国首尔":
+      link: https://cos.ap-seoul.myqcloud.com
+    "美国西部 - 硅谷":
+      link: https://cos.na-siliconvalley.myqcloud.com
+    "美国东部 - 弗吉尼亚阿什本":
+      link: https://cos.na-ashburn.myqcloud.com
+    "泰国曼谷":
+      link: https://cos.ap-bangkok.myqcloud.com
+    "俄罗斯莫斯科":
+      link: https://cos.eu-moscow.myqcloud.com
+ucloud:
+  name: UCloud
+  region:
+    "北京":
+      link: http://www.cn-bj.ufileos.com
+    "上海二":
+      link: http://www.cn-sh2.ufileos.com
+    "香港":
+      link: http://www.hk.ufileos.com
+    "广东":
+      link: http://www.cn-gd.ufileos.com
+    "美国 (洛杉矶)":
+      link: http://www.us-ca.ufileos.com
+    "雅加达 (印度尼西亚)":
+      link: http://www.idn-jakarta.ufileos.com
+    "新加坡":
+      link: http://www.sg.ufileos.com
+    "尼日利亚":
+      link: http://www.afr-nigeria.ufileos.com
+bdy:
+  name: "百度云"
+  region:
+    "华北 - 北京":
+      link: http://www.bj.bcebos.com
+    "华南 - 广州":
+      link: http://www.gz.bcebos.com
+    "华东 - 苏州":
+      link: http://www.su.bcebos.com
+jdcloud:
+  name: "京东云"
+  region:
+    "华北 - 北京":
+      link: https://s3.cn-north-1.jcloudcs.com
+    "华东 - 宿迁":
+      link: https://s3.cn-east-1.jcloudcs.com
+    "华东 - 上海":
+      link: https://s3.cn-east-2.jcloudcs.com
+    "华南 - 广州":
+      link: https://s3.cn-south-1.jcloudcs.com
+hwcloud:
+  name: "华为云"
+  region:
+    "华北 - 北京一":
+      link: https://ecs.cn-north-1.myhuaweicloud.com
+    "华东 - 上海二":
+      link: https://ecs.cn-east-2.myhuaweicloud.com
+    "华南 - 广州":
+      link: https://ecs.cn-south-1.myhuaweicloud.com
+    "东北 - 大连":
+      link: https://ecs.cn-northeast-1.myhuaweicloud.com
+    "亚太 - 香港":
+      link: https://ecs.ap-southeast-1.myhwclouds.com
+qingcloud:
+  name: "青云"
+  region:
+    "北京 3 区 - A":
+      link: http://mybucket.pek3a.qingstor.com
+    "上海 1 区 - A":
+      link: http://mybucket1.sh1a.qingstor.com
+gcp:
+  name: "Google Cloud Platform"
+  region:
+    "美洲 - 巴西 圣保罗 (southamerica-east1)":
+      link: http://35.198.10.68
+    "美洲 - 美国 爱荷华州 (us-central1)":
+      link: http://104.197.165.8
+    "美洲 - 美国 南卡罗来纳州 (us-east1)":
+      link: http://104.196.161.21
+    "美洲 - 美国 北弗吉尼亚 (us-east4)":
+      link: http://35.186.168.152
+    "美洲 - 美国 俄勒冈州 (us-west1)":
+      link: http://104.199.116.74
+    "美洲 - 美国 洛杉矶 (us-west2)":
+      link: http://35.236.45.25
+    "美洲 - 加拿大 蒙特利尔 (northamerica-northeast1)":
+      link: http://35.203.57.164
+    "亚太 - 台湾 彰化 (asia-east1)":
+      link: http://104.155.201.52
+    "亚太 - 日本 东京 (asia-northeast1)":
+      link: http://104.198.86.148
+    "亚太 - 印度 孟买 (asia-south1)":
+      link: http://35.200.186.152
+    "亚太 - 新加坡 (asia-southeast1)":
+      link: http://35.185.179.198
+    "亚太 - 澳大利亚 悉尼 (australia-southeast1)":
+      link: http://35.189.6.113
+    "欧洲 - 芬兰 哈米纳 (europe-north1)":
+      link: http://35.228.170.201
+    "欧洲 - 比利时 圣吉斯兰 (europe-west1)":
+      link: http://104.199.82.109
+    "欧洲 - 英国 伦敦 (europe-west2)":
+      link: http://35.189.67.146
+    "欧洲 - 德国 法兰克福 (europe-west3)":
+      link: http://35.198.78.172
+    "欧洲 - 荷兰 格罗宁根 (europe-west4)":
+      link: http://35.204.93.82
+    "Google Global Balancer (Anycast)":
+      link: http://35.186.221.153
+aws:
+  name: AWS
+  region:
+    "US East (Ohio)":
+      link: https://ecs.us-east-2.amazonaws.com
+    "US East (N. Virginia)":
+      link: https://ecs.us-east-1.amazonaws.com
+    "US West (N. California)":
+      link: https://ecs.us-west-1.amazonaws.com
+    "US West (Oregon)":
+      link: https://ecs.us-west-2.amazonaws.com
+    "Asia Pacific (Mumbai)":
+      link: https://ecs.ap-south-1.amazonaws.com
+    "Asia Pacific (Seoul)":
+      link: https://ecs.ap-northeast-2.amazonaws.com
+    "Asia Pacific (Singapore)":
+      link: https://ecs.ap-southeast-1.amazonaws.com
+    "Asia Pacific (Sydney)":
+      link: https://ecs.ap-southeast-2.amazonaws.com
+    "Asia Pacific (Tokyo)":
+      link: https://ecs.ap-northeast-1.amazonaws.com
+    "Canada (Central)":
+      link: https://ecs.ca-central-1.amazonaws.com
+    "China (Beijing)":
+      link: https://ecs.cn-north-1.amazonaws.com.cn
+    "China (Ningxia)":
+      link: https://ecs.cn-northwest-1.amazonaws.com.cn
+    "EU (Frankfurt)":
+      link: https://ecs.eu-central-1.amazonaws.com
+    "EU (Ireland)":
+      link: https://ecs.eu-west-1.amazonaws.com
+    "EU (London)":
+      link: https://ecs.eu-west-2.amazonaws.com
+    "EU (Paris)":
+      link: https://ecs.eu-west-3.amazonaws.com
+    "South America (São Paulo)":
+      link: https://ecs.sa-east-1.amazonaws.com
+    "AWS GovCloud (US)":
+      link: https://ecs.us-gov-west-1.amazonaws.com
+bwh:
+  name: BandwagonHost
+  region:
+    "香港 PCCW":
+      link: http://23.252.97.148
+    "洛杉矶 CN2 GIA":
+      link: http://65.49.131.102
+    "洛杉矶 CN2 (QN)":
+      link: http://23.252.103.101
+    "洛杉矶 CN2 (C3)":
+      link: http://23.252.99.102
+    "洛杉矶 QNET":
+      link: http://23.252.96.201
+      dl:
+        100MB: /100mb.bin
+        500MB: /500mb.bin
+        1000MB: /1000mb.bin
+    "洛杉矶 MCOM":
+      link: http://98.142.136.11
+      dl:
+        100MB: /100mb.bin
+        500MB: /500mb.bin
+        1000MB: /1000mb.bin
+    "凤凰城":
+      link: http://198.35.46.28
+      dl:
+        100MB: /100mb.bin
+        500MB: /500mb.bin
+        1000MB: /1000mb.bin
+    "弗里蒙特":
+      link: http://184.105.138.67
+      dl:
+        100MB: /100mb.bin
+        500MB: /500mb.bin
+        1000MB: /1000mb.bin
+    "新泽西":
+      link: http://23.29.138.3
+      dl:
+        100MB: /100mb.bin
+        500MB: /500mb.bin
+        1000MB: /1000mb.bin
+    "纽约":
+      link: http://208.167.227.122
+      dl:
+        100MB: /100mb.bin
+        500MB: /500mb.bin
+        1000MB: /1000mb.bin
+    "弗罗里达":
+      link: http://23.252.104.22
+      dl:
+        100MB: /100mb.bin
+        500MB: /500mb.bin
+        1000MB: /1000mb.bin
+    "荷兰":
+      link: http://45.62.120.202
+      dl:
+        100MB: /100mb.bin
+        500MB: /500mb.bin
+        1000MB: /1000mb.bin
+    "加拿大温哥华":
+      link: http://172.93.32.16
+      dl:
+        100MB: /100mb.bin
+        500MB: /500mb.bin
+        1000MB: /1000mb.bin
+hostus:
+  name: HostUS
+  region:
+    "ATL01":
+      link: https://atl-lg.hostus.us
+      dl: 
+        10MB: /10MB.test
+        100MB: /100MB.test
+    "CLT01":
+      link: https://clt-lg.hostus.us
+      dl: 
+        10MB: /10MB.test
+        100MB: /100MB.test
+    "DLA01":
+      link: https://dal-lg.hostus.us
+      dl: 
+        10MB: /10MB.test
+        100MB: /100MB.test
+    "DLA02":
+      link: https://dal-lg.hostus.us
+      dl: 
+        10MB: /10MB.test
+        100MB: /100MB.test
+    "LAX01":
+      link: https://la-lg.hostus.us
+      dl: 
+        10MB: /10MB.test
+        100MB: /100MB.test
+    "LAX02":
+      link: https://la02-lg.hostus.us
+      dl: 
+        10MB: /10MB.test
+        100MB: /100MB.test
+    "LAX03":
+      link: https://la03-lg.hostus.us
+      dl: 
+        10MB: /10MB.test
+        100MB: /100MB.test
+    "HKG01":
+      link: https://hk-lg.hostus.us
+      dl: 
+        10MB: /10MB.test
+        100MB: /100MB.test
+    "SYD01":
+      link: https://syd-lg.hostus.us
+      dl: 
+        10MB: /10MB.test
+        100MB: /100MB.test
+    "SGP01":
+      link: https://sgp-lg.hostus.us
+      dl: 
+        10MB: /10MB.test
+        100MB: /100MB.test
+    "LON01":
+      link: https://lon-lg.hostus.us
+      dl: 
+        10MB: /10MB.test
+        100MB: /100MB.test
+    "AMS01":
+      link: https://ams-lg.hostus.us
+      dl: 
+        10MB: /10MB.test
+        100MB: /100MB.test
+virmach:
+  name: Virmach
+  region:
+    "Frankfurt, Germany":
+      link: http://ffm.lg.virmach.com
+      dl:
+        25MB: /25MB.test
+        50MB: /50MB.test
+        100MB: /100MB.test
+    "Amsterdam, Netherlands":
+      link: http://ams.lg.virmach.com
+      dl:
+        25MB: /25MB.test
+        50MB: /50MB.test
+        100MB: /100MB.test
+    "Buffalo":
+      link: http://ny.lg.virmach.com
+      dl:
+        25MB: /25MB.test
+        50MB: /50MB.test
+        100MB: /100MB.test
+    "Piscataway (NYC)":
+      link: http://nj.lg.virmach.com
+      dl:
+        25MB: /25MB.test
+        50MB: /50MB.test
+        100MB: /100MB.test
+    "Dallas":
+      link: http://dal.lg.virmach.com
+      dl:
+        25MB: /25MB.test
+        50MB: /50MB.test
+        100MB: /100MB.test
+    "Phoenix":
+      link: http://phx.lg.virmach.com
+      dl:
+        25MB: /25MB.test
+        50MB: /50MB.test
+        100MB: /100MB.test
+    "Los Angeles":
+      link: http://la.lg.virmach.com
+      dl:
+        25MB: /25MB.test
+        50MB: /50MB.test
+        100MB: /100MB.test
+    "DDoS-Protected Los Angeles":
+      link: http://filtered-la.lg.virmach.com
+      dl:
+        25MB: /25MB.test
+        50MB: /50MB.test
+        100MB: /100MB.test
+    "Chicago":
+      link: http://chi.lg.virmach.com
+      dl:
+        25MB: /25MB.test
+        50MB: /50MB.test
+        100MB: /100MB.test
+    "Seattle":
+      link: http://sea.lg.virmach.com
+      dl:
+        25MB: /25MB.test
+        50MB: /50MB.test
+        100MB: /100MB.test
+    "Atlanta":
+      link: http://atl.lg.virmach.com
+      dl:
+        25MB: /25MB.test
+        50MB: /50MB.test
+        100MB: /100MB.test
+    "San Jose":
+      link: http://sj.lg.virmach.com
+      dl:
+        25MB: /25MB.test
+        50MB: /50MB.test
+        100MB: /100MB.test
+azure:
+  name: Azure
+  region:
+    "West Europe":
+      link: http://speedtestwe.blob.core.windows.net
+    "Southeast Asia":
+      link: http://speedtestsea.blob.core.windows.net
+    "East Asia":
+      link: http://speedtestea.blob.core.windows.net
+    "North Central US":
+      link: http://speedtestnsus.blob.core.windows.net
+    "North Europe":
+      link: http://speedtestne.blob.core.windows.net
+    "South Central US":
+      link: http://speedtestscus.blob.core.windows.net
+    "West US":
+      link: http://speedtestwus.blob.core.windows.net
+    "East US":
+      link: http://speedtesteus.blob.core.windows.net
+    "Japan East":
+      link: http://speedtestjpe.blob.core.windows.net
+    "Japan West":
+      link: http://speedtestjpw.blob.core.windows.net
+    "Brazil South":
+      link: http://speedtestbs.blob.core.windows.net
+    "Central US":
+      link: http://speedtestcus.blob.core.windows.net
+    "East US 2":
+      link: http://speedtesteus2.blob.core.windows.net
+    "Australia Southeast":
+      link: http://mickmel.blob.core.windows.net
+    "Australia East":
+      link: http://micksyd.blob.core.windows.net
+    "West UK":
+      link: http://speedtestukw.blob.core.windows.net
+    "South UK":
+      link: http://speedtestuks.blob.core.windows.net
+    "Canada Central":
+      link: http://speedtestcac.blob.core.windows.net
+    "Canada East":
+      link: http://speedtestcae.blob.core.windows.net
+    "West US 2":
+      link: http://speedtestwestus2.blob.core.windows.net
+    "West India":
+      link: http://speedtestwestindia.blob.core.windows.net
+    "East India":
+      link: http://speedtesteastindia.blob.core.windows.net
+    "Central India":
+      link: http://speedtestcentralindia.blob.core.windows.net
+    "Korea Central":
+      link: http://speedtestkoreacentral.blob.core.windows.net
+    "Korea South":
+      link: http://speedtestkoreasouth.blob.core.windows.net
+    "West Central US":
+      link: http://speedtestwestcentralus.blob.core.windows.net
+    "France Central":
+      link: http://speedtestfrc.blob.core.windows.net
