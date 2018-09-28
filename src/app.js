@@ -52,7 +52,7 @@ function renderCard() {
                 var region_data = region[value];
                 var domain = region_data.link.replace('http://', '').replace('https://', '');
                 if (region_data.dl) {
-                    var testfile = '<div class="card-footer sk-pt-1">';
+                    var testfile = '<div class="divider"></div><div class="card-footer sk-pt-2">';
                     for (i in region_data.dl) {
                         var testItem = '<a href="' + domain + region_data.dl[i] + '" class="sk-mr-2">' + i + '</a>';
                         testfile += testItem;
