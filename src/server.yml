@@ -404,6 +404,15 @@ qingcloud:
     sh1a:
       name: 上海 1 区 - A
       link: http://mybucket1.sh1a.qingstor.com
+mtyun:
+  name: "美团云"
+  region:
+    north_cn_1:
+      name: 华北 1 区 - 北京
+      link: http://mtmss.com
+    east_cn_1:
+      name: 华东 1 区 - 上海
+      link: http://eastchina1.mtmss.com
 gcp:
   name: "Google Cloud Platform"
   region:
