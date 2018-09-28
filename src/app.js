@@ -41,6 +41,7 @@ function renderCard() {
             let region = json[value].region;
             Object.keys(region).forEach((value, index) => {
                 region[value].url = region[value].link.replace('http://', '').replace('https://', '');
+                region[value].id = value;
                 if (typeof (region[value].dl) === "undefined") {
                     region[value].dl = '';
                 }
@@ -61,29 +62,38 @@ function renderCard() {
 renderCard();
 
 function checkLatency() {
-    function loadImage(url) {
-        let startTime = new Date().getTime();
-        let random = Math.random() + startTime;
+    var data = [];
+
+    function getDNS(url) {
         let img = new Image;
-        img.onerror = () => {
-            let stopTime = new Date().getTime();
-            return stopTime - startTime;
-        };
+        img.src = url + '/sukka-checklatency?' + Math.random();
+        img.dt = new Date();
+    }
+
+    function getMain(url, data) {
+        data.start = new Date().getTime();
+        let img = new Image;
         img.onload = () => {
-            let stopTime = new Date().getTime();
-            return stopTime - startTime;
+            data.finish = new Date().getTime();
+            console.log(data)
         }
-        img.src = url + random;
+        img.onerror = () => {
+            data.finish = new Date().getTime();
+            console.log(data)
+        }
+        img.src = url + '/sukka-checklatency?' + Math.random();
+        img.dt = new Date();
     }
 
     var json = serverJson[this.getAttribute('id')];
     let pool = Object.keys(json.region).length;
-    let data = [];
     Object.keys(json.region).forEach((value, index) => {
         data.region = value;
         data.link = json.region[value].link
-        data.current = loadImage(data.link + '/sukka-checklatency-get-dns?');
+        getDNS(data.link);
+        getMain(data.link, data);
     });
+    console.log(data);
 }
 
 
