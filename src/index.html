@@ -23,6 +23,10 @@
         .meter {
             height: .4rem;
         }
+
+        .card-subtitle {
+            overflow: hidden;
+        }
     </style>
 </head>
 
@@ -32,7 +36,27 @@
         <div id="app"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bdtpl@1.0.6"></script>
-    <script id="cloud-item-tpl" type="text/html"></script>
+    <script id="cloud-item-tpl" type="text/html">
+        <div class="column col-xs-12 col-md-6 col-xl-4 col-3 sk-pt-3">
+            <div class="card sk-shadow-1">
+                <div class="card-header">
+                    <div class="card-title text-bold h5"><%= name %></div>
+                    <div class="card-subtitle text-gray sk-text-small"><%= url %></div>
+                </div>
+                <div class="card-body">
+                    <meter class="meter" value="20" min="0" max="100"></meter>
+                    <p class="text-center sk-text-dark mb-0"><small>100ms</small></p>
+                </div>
+                <% if (dl) { %>
+                    <div class="divider"></div><div class="card-footer sk-pt-2">
+                    <% for (i in dl) { %>
+                        <a href="<%= link %><%= dl[i] %>" class="sk-mr-2"><%= i %></a>
+                    <% } %>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </script>
     <script src="app.js"></script>
 </body>
 

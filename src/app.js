@@ -43,40 +43,17 @@ function loadImage(url) {
 
 function renderCard() {
     get("server.json").then(json => {
+        window.serverJson = json;
         Object.keys(json).forEach((value, index) => {
-            let html = '<h2 id="' + value + '" class="h4 sk-text-dark sk-mt-7 sk-pt-3 sk-mb-2 sk-text-bold">' + json[value].name + '</h2>';
+            var html = '<h2 id="cloud-' + value + '" class="h4 sk-text-dark sk-mt-7 sk-pt-3 sk-mb-2 sk-text-bold">' + json[value].name + '</h2>';
             html += '<div class="columns">';
-            var region = json[value].region;
+            let region = json[value].region;
             Object.keys(region).forEach((value, index) => {
-                let name = value;
-                var region_data = region[value];
-                var domain = region_data.link.replace('http://', '').replace('https://', '');
-                if (region_data.dl) {
-                    var testfile = '<div class="divider"></div><div class="card-footer sk-pt-2">';
-                    for (i in region_data.dl) {
-                        var testItem = '<a href="' + domain + region_data.dl[i] + '" class="sk-mr-2">' + i + '</a>';
-                        testfile += testItem;
-                    }
-                    testfile += '</div>'
-                } else {
-                    var testfile = '';
+                region[value].url = region[value].link.replace('http://', '').replace('https://', '');
+                if (typeof(region[value].dl) === "undefined") {
+                    region[value].dl = '';
                 }
-                var cloudItem = `
-                <div class="column col-xs-12 col-md-6 col-xl-4 col-3 sk-pt-3">
-                    <div class="card sk-shadow-1">
-                        <div class="card-header">
-                            <div class="card-title text-bold h5">${name}</div>
-                            <div class="card-subtitle text-gray sk-text-small">${domain}</div>
-                        </div>
-                        <div class="card-body">
-                            <meter class="meter" value="20" min="0" max="100"></meter>
-                            <p class="text-center sk-text-dark mb-0"><small>100ms</small></p>
-                        </div>
-                        ${testfile}
-                    </div>
-                </div>
-                `;
-                html += cloudItem;
+                html += baidu.template('cloud-item-tpl', region[value]);
             });
             html += '</div>';
             html += '<button id="' + value + '" class="btn btn-primary sk-mt-3 check-latency-button">开始测试</button>';
@@ -85,15 +62,21 @@ function renderCard() {
     }).then(function () {
         var $btn = document.getElementsByClassName('check-latency-button');
         for (var i = 0; i < $btn.length; i += 1) {
-            $btn[i].addEventListener('click', owo);
+            $btn[i].addEventListener('click', checkLatency);
         };
     });
 }
 
 renderCard();
 
-function owo() {
-    console.log(this.getAttribute('id'))
+function checkLatency() {
+    var json = serverJson[this.getAttribute('id')];
+    Object.keys(json.region).forEach((value, index) => {
+        let region = json.region[value]
+        let data = [];
+        data.url = region.link
+        console.log(data)
+    });
 }
 /*
 async function test_dns(data) {
