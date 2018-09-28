@@ -479,7 +479,7 @@ aws:
     ap_south_1:
       name: Asia Pacific (印度孟买)
       link: https://ecs.ap-south-1.amazonaws.com
-    ap_northeast_1:
+    ap_northeast_2:
       name: Asia Pacific (韩国首尔)
       link: https://ecs.ap-northeast-2.amazonaws.com
     ap_southeast_1:
