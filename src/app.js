@@ -17,7 +17,7 @@ get = (url) =>
 
 get("server.json").then(json => {
     Object.keys(json).forEach((value, index) => {
-        var html = '<h2 class="h4 sk-text-dark sk-mt-8 sk-mb-0 sk-text-bold">' + value + '</h2>';
+        var html = '<h2 class="h4 sk-text-dark sk-mt-8 sk-mb-2 sk-text-bold">' + value + '</h2>';
         html += '<div class="columns">';
         var region = json[value];
         Object.keys(region).forEach((value, index) => {
@@ -35,7 +35,7 @@ get("server.json").then(json => {
                 var testfile = '';
             }
             var cloudItem = `
-            <div class="column col-xs-12 col-md-6 col-xl-4 col-3 sk-pt-4">
+            <div class="column col-xs-12 col-md-6 col-xl-4 col-3 sk-pt-3">
                 <div class="card sk-shadow-1">
                     <div class="card-header">
                         <div class="card-title text-bold h5">${name}</div>
@@ -52,6 +52,7 @@ get("server.json").then(json => {
             html += cloudItem;
         });
         html += '</div>';
+        html += '<button class="btn btn-primary sk-mt-3">开始测试</button>';
         document.getElementById('app').insertAdjacentHTML('beforeend', html);
     });
 });
