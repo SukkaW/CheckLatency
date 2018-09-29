@@ -62,38 +62,120 @@ function renderCard() {
 renderCard();
 
 function checkLatency() {
-    var data = [];
-
-    function getDNS(url) {
-        let img = new Image;
-        img.src = url + '/sukka-checklatency?' + Math.random();
-        img.dt = new Date();
-    }
-
-    function getMain(url, data) {
-        data.start = new Date().getTime();
-        let img = new Image;
-        img.onload = () => {
-            data.finish = new Date().getTime();
-            console.log(data)
-        }
-        img.onerror = () => {
-            data.finish = new Date().getTime();
-            console.log(data)
-        }
-        img.src = url + '/sukka-checklatency?' + Math.random();
-        img.dt = new Date();
-    }
-
-    var json = serverJson[this.getAttribute('id')];
-    let pool = Object.keys(json.region).length;
+    let cloud = this.getAttribute('id');
+    var json = serverJson[cloud];
     Object.keys(json.region).forEach((value, index) => {
-        data.region = value;
-        data.link = json.region[value].link
-        getDNS(data.link);
-        getMain(data.link, data);
+        let data = [];
+        data.region = json.region[value]
+        console.log(data)
     });
-    console.log(data);
+
+    function delayPromise(ms) {
+        return new Promise(function (resolve) {
+            setTimeout(resolve, ms);
+        });
+    }
+    function timeoutPromise(promise, ms) {
+        var timeout = delayPromise(ms).then(function () {
+            throw new Error('Operation timed out after ' + ms + ' ms');
+        });
+        return Promise.race([promise, timeout]);
+    }
+
+    async function asyncPool(poolLimit, array, iteratorFn) {
+        const ret = [];
+        const executing = [];
+        for (const item of array) {
+            const p = Promise.resolve().then(() => iteratorFn(item, array));
+            ret.push(p);
+            const e = p.then(() => executing.splice(executing.indexOf(e), 1));
+            executing.push(e);
+            if (executing.length >= poolLimit) {
+                await Promise.race(executing);
+            }
+        }
+        return Promise.all(ret);
+    }
+
+    async function asyncPool(poolLimit, array, iteratorFn) {
+        const ret = [];
+        const executing = [];
+        for (const item of array) {
+            const p = Promise.resolve().then(() => iteratorFn(item, array));
+            ret.push(p);
+            const e = p.then(() => executing.splice(executing.indexOf(e), 1));
+            executing.push(e);
+            if (executing.length >= poolLimit) {
+                await Promise.race(executing);
+            }
+        }
+        return Promise.all(ret);
+    }
+
+    function loadImage(url) {
+        return new Promise((resolve, reject) => {
+            let img = new Image();
+            img.onload = () => resolve(img);
+            img.onerror = reject;
+            img.src = url;
+        })
+    }
+
+    async function test_main(data) {
+        await console.log(this);
+        await test_dns(data);
+    }
+
+    async function test_dns(data) {
+        data.status = 'preloading dns ...'
+
+        let start = (new Date()).getTime();
+
+        try {
+            let random = Math.random()
+            await timeoutPromise(loadImage(`${data.url}/sukka-checklatency-getdns?${random}`), 6000)
+        } catch (error) {
+            console.error(error);
+        }
+
+        let end = (new Date()).getTime();
+
+        if (end - start > 6000) {
+            data.current = 0
+            data.status = 'timeout'
+            data.score = 0
+            data.timeout = end - start
+        } else {
+            data.current = 0
+            data.status = 'dns preload finished'
+        }
+    }
+
+    async function test_main(data) {
+        data.status = 'start testing ...'
+
+        let start = (new Date()).getTime();
+
+        try {
+            let random = Math.random()
+            await timeoutPromise(loadImage(`${data.url}/sukka-checklatency-getdns?${random}`), 6000)
+        } catch (error) {
+            console.error(error);
+        }
+
+        let end = (new Date()).getTime();
+
+        if (end - start > 10000) {
+            data.current = 0
+            data.status = 'timeout'
+            data.score = 0
+            data.timeout = end - start
+        } else {
+            data.current = data.current + 1
+            data.status = 'testing ...'
+            data.timeout = (end - start + data.timeout) / data.current
+        }
+    }
 }
 
 
