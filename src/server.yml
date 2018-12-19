@@ -851,3 +851,42 @@ azure:
     frc:
       name: France Central 法国巴黎
       link: http://speedtestfrc.blob.core.windows.net
+ovh:
+  name: OVH
+  region:
+    lim:
+      name: FRA1-LIM 德国黑森州林堡
+      link: http://fra1-lim.smokeping.ovh.net
+    rbx:
+      name: LIL1-RBX 法国鲁贝
+      link: http://lil1-rbx.smokeping.ovh.net
+    gra:
+      name: LIL2-GRA 法国格拉沃利讷
+      link: http://lil2-gra.smokeping.ovh.net
+    sbg:
+      name: SBG1-SBG 法国斯特拉斯堡
+      link: http://sbg1-sbg.smokeping.ovh.net
+    rbx:
+      name: LIL1-RBX 法国鲁贝
+      link: http://lil1-rbx.smokeping.ovh.net
+    lon:
+      name: LON1-ERI 英国伦敦
+      link: http://lon1-eri.smokeping.ovh.net
+    waw:
+      name: WAW1-OZA 波兰华沙
+      link: http://waw1-oza.smokeping.ovh.net
+    pdx:
+      name: PDX1-HIL 美国波特兰
+      link: http://pdx1-hil.smokeping.ovh.net
+    was:
+      name: WAS1-VIN 美国华盛顿
+      link: http://was1-vin.smokeping.ovh.net
+    bhs:
+      name: YMQ1-BHS 加拿大魁北克
+      link: http://ymq1-bhs.smokeping.ovh.net
+    sin:
+      name: SIN-SGCS2 新加坡
+      link: http://sin1-sgcs2.smokeping.ovh.net
+    syd:
+      name: SYD-SY2 澳大利亚悉尼
+      link: http://syd1-sy2.smokeping.ovh.net
