@@ -849,7 +849,7 @@ buffer-from@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.1.tgz#32713bc028f75c02fdb710d7c7bcec1f2c6070ef"
 
-bufferstreams@^2.0.0:
+bufferstreams@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/bufferstreams/-/bufferstreams-2.0.1.tgz#441b267c2fc3fee02bb1d929289da113903bd5ef"
   dependencies:
@@ -1565,16 +1565,16 @@ gulp-uglify@3.0.1:
     uglify-js "^3.0.5"
     vinyl-sourcemaps-apply "^0.2.0"
 
-gulp-yaml@2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/gulp-yaml/-/gulp-yaml-2.0.2.tgz#a670c4f72c8c1e25e2143c7e15c1b9425ec06539"
+gulp-yaml@2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/gulp-yaml/-/gulp-yaml-2.0.3.tgz#5fbc5394cf613fbc2d5015ed11462443d8fb61f0"
   dependencies:
-    bufferstreams "^2.0.0"
-    js-yaml "^3.12.0"
+    bufferstreams "^2.0.1"
+    js-yaml "^3.12.1"
     object-assign "^4.1.1"
     plugin-error "^1.0.1"
     replace-ext "^1.0.0"
-    through2 "^2.0.0"
+    through2 "^3.0.0"
 
 gulp@4.0.0:
   version "4.0.0"
@@ -1902,9 +1902,9 @@ js-tokens@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
 
-js-yaml@^3.12.0:
-  version "3.12.0"
-  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.12.0.tgz#eaed656ec8344f10f527c6bfa1b6e2244de167d1"
+js-yaml@^3.12.1:
+  version "3.12.1"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.12.1.tgz#295c8632a18a23e054cf5c9d3cecafe678167600"
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
@@ -2906,7 +2906,7 @@ through2-filter@^2.0.0:
     through2 "~2.0.0"
     xtend "~4.0.0"
 
-through2@3.0.0:
+through2@3.0.0, through2@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/through2/-/through2-3.0.0.tgz#468b461df9cd9fcc170f22ebf6852e467e578ff2"
   dependencies:
