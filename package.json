@@ -16,7 +16,7 @@
     "@babel/core": "7.4.3",
     "babel-preset-env": "1.7.0",
     "del": "4.1.0",
-    "gulp": "4.0.0",
+    "gulp": "4.0.1",
     "gulp-autoprefixer": "6.1.0",
     "gulp-babel": "8.0.0",
     "gulp-clean-css": "4.0.0",
