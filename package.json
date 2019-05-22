@@ -13,7 +13,7 @@
   },
   "homepage": "https://github.com/SukkaW/CheckLatency#readme",
   "dependencies": {
-    "@babel/core": "7.4.4",
+    "@babel/core": "7.4.5",
     "babel-preset-env": "1.7.0",
     "del": "4.1.1",
     "gulp": "4.0.2",
