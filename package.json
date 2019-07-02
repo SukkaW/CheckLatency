@@ -15,7 +15,7 @@
   "dependencies": {
     "@babel/core": "7.4.5",
     "babel-preset-env": "1.7.0",
-    "del": "4.1.1",
+    "del": "5.0.0",
     "gulp": "4.0.2",
     "gulp-autoprefixer": "6.1.0",
     "gulp-babel": "8.0.0",
